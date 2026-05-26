@@ -166,8 +166,12 @@ class LiveService:
                         break
 
                 # Mask RTMP address for logging
-                logger.info(f"RTMP-1 Addr: {util.mask_string(rtmp_addr, 10, 5)}")
-                logger.info(f"RTMP-1 Code: {util.mask_string(rtmp_code, 5, 5)}")
+                # logger.info(f"RTMP-1 Addr: {util.mask_string(rtmp_addr, 10, 5)}")
+                # logger.info(f"RTMP-1 Code: {util.mask_string(rtmp_code, 5, 5)}")
+                
+                # modified by mingtu
+                logger.info(f"RTMP-1 Addr: {rtmp_addr}")
+                logger.info(f"RTMP-1 Code: {rtmp_code}")
                 
                 return {
                     "code": 0, 
